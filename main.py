@@ -94,7 +94,7 @@ with st.sidebar:
 
     st.markdown("""
     <div style="text-align: center;">
-        <a href="https://github.com/yourusername/predictly" target="_blank">GitHub Repository</a>
+        <a href="https://github.com/snvice/predictly" target="_blank">GitHub Repository</a>
     </div>
     """, unsafe_allow_html=True)
 
