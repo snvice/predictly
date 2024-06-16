@@ -89,7 +89,7 @@ with st.sidebar:
         """, unsafe_allow_html=True)
     
     st.write('')
-    st.write("Predictly is a smart phone price prediction app powered by Streamlit and CatBoost regressor. It helps you estimate phone prices and explore the latest smartphone data.")
+    st.write("Predictly is a smart phone price prediction app powered by Streamlit and CatBoost. It helps you estimate phone prices and explore the latest smartphone data.")
     st.write('')
 
     st.markdown("""
