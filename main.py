@@ -70,7 +70,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-img_base64 = img_to_base64("img/panther2.JPEG")
+img_base64 = img_to_base64("img/panther2.jpeg")
 st.sidebar.markdown(
     f'<img src="data:image/png;base64,{img_base64}" class="cover-glow">',
     unsafe_allow_html=True,
