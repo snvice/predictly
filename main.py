@@ -33,7 +33,7 @@ with col1:
         st.markdown(gradient_text_html, unsafe_allow_html=True)
     with colh2:
         
-        with open('/lottie/Anime.json', 'r') as f:
+        with open('lottie/Anime.json', 'r') as f:
             st_lottie(load_anime(f), height=100)
 
 with col2:
@@ -70,7 +70,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-img_base64 = img_to_base64("./img/panther2.JPEG")
+img_base64 = img_to_base64("img/panther2.JPEG")
 st.sidebar.markdown(
     f'<img src="data:image/png;base64,{img_base64}" class="cover-glow">',
     unsafe_allow_html=True,
@@ -297,7 +297,7 @@ with st.container(border=False):
         number = st.slider("Set your price 🚀", min_value=2000, max_value=120000, step=100, value=48000)
         colppp1, colppp2 = st.columns([0.99, 0.01])
         with colppp1:
-            df = load_data("./csv/prices.csv")
+            df = load_data("csv/prices.csv")
             min_price = number - 5000
             max_price = number + 5000
             sliced_df = df[df['price'].between(min_price, max_price)].sort_values(by="price", ascending=True)
@@ -327,7 +327,7 @@ with st.chat_message("assistant", avatar="./img/stuser.png"):
 
 @st.cache_resource
 def get_pyg_renderer() -> "StreamlitRenderer":
-    df = load_data("./csv/filtered.csv")
+    df = load_data("csv/filtered.csv")
     return StreamlitRenderer(df, spec="./walker_config.json", spec_io_mode="rw", appearance='light')
 
 renderer = get_pyg_renderer()
