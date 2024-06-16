@@ -33,7 +33,7 @@ with col1:
         st.markdown(gradient_text_html, unsafe_allow_html=True)
     with colh2:
         
-        with open('./lottie/Anime.json', 'r') as f:
+        with open('/lottie/Anime.json', 'r') as f:
             st_lottie(load_anime(f), height=100)
 
 with col2:
